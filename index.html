@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Ramón Alejandro Morales Torres</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #0ea5e9;
+            --text-color: #334155;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #1e293b);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: var(--accent-color);
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: var(--white);
+            margin: 2rem 0;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.2rem;
+            font-size: 1.75rem;
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-card {
+            background: var(--bg-light);
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            font-weight: 600;
+        }
+
+        .projects-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ramón Alejandro Morales Torres</h1>
+        <p>Estudiante de Tecnología de Ingeniería en Instrumentación</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="perfil">
+            <h2>Perfil Profesional</h2>
+            <p>Estudiante graduando del programa de Tecnología de Ingeniería en Instrumentación del ITPR Guayama. Apasionado por la automatización de procesos industriales, el control de variables físicas, la calibración de instrumentos de precisión y la resolución de problemas en sistemas electrónicos y neumáticos. Comprometido con la seguridad industrial, la eficiencia operativa y la integración de tecnologías modernas de control.</p>
+        </section>
+
+        <section id="competencias">
+            <h2>Competencias Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Calibración de Instrumentos (Presión, Temperatura, Nivel, Flujo)</div>
+                <div class="skill-card">Programación y Configuración de PLC</div>
+                <div class="skill-card">Sistemas de Control y Lazos PID</div>
+                <div class="skill-card">Lectura de Diagramas P&ID y Eléctricos</div>
+                <div class="skill-card">Sistemas SCADA e Instrumentación Industrial</div>
+                <div class="skill-card">Mantenimiento Preventivo y Correctivo</div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <h3>Simulación de Lazo de Control de Nivel</h3>
+                    <p>Diseño y prueba simulada de un sistema de control de nivel en tanques industriales utilizando instrumentación virtual y sintonización de parámetros PID.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Banco de Calibración de Presión</h3>
+                    <p>Proyecto práctico enfocado en la verificación de exactitud y calibración de transmisores de presión utilizando patrones de referencia certificados.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Interesado en colaborar o conocer más sobre mis competencias técnicas? No dudes en comunicarte:</p>
+            <p class="contact-info">📧 Correo: morales.r83@yahoo.com</p>
+            <p class="contact-info">📍 Ubicación: Guayama, Puerto Rico</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ramón Alejandro Morales Torres | Portafolio Profesional de Ingeniería en Instrumentación</p>
+        <p>ITPR Guayama - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
